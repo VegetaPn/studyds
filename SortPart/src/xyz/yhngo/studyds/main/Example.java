@@ -10,7 +10,8 @@ public class Example {
     public static void sort(Comparable[] a){
 //        Selection.sort(a);
 //        Insertion.sort(a);
-        Shell.sort(a);
+//        Shell.sort(a);
+        Merge.sort(a);
     }
 
     public static boolean less(Comparable v, Comparable w) {
