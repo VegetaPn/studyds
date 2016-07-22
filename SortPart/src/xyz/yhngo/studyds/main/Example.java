@@ -11,7 +11,9 @@ public class Example {
 //        Selection.sort(a);
 //        Insertion.sort(a);
 //        Shell.sort(a);
-        Merge.sort(a);
+//        Merge.sort(a);
+//        Quick.sort(a);
+        Quick3way.sort(a);
     }
 
     public static boolean less(Comparable v, Comparable w) {
