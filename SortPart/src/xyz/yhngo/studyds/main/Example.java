@@ -13,7 +13,8 @@ public class Example {
 //        Shell.sort(a);
 //        Merge.sort(a);
 //        Quick.sort(a);
-        Quick3way.sort(a);
+//        Quick3way.sort(a);
+        HeapS.sort(a);
     }
 
     public static boolean less(Comparable v, Comparable w) {
