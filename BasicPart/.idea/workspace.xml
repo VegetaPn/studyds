@@ -22,26 +22,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Example.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../SortPart/src/xyz/yhngo/studyds/main/Example.java">
+      <file leaf-file-name="MaxPQ.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../SortPart/src/xyz/yhngo/studyds/main/MaxPQ.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+            <state relative-caret-position="120">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Quick3way.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../SortPart/src/xyz/yhngo/studyds/main/Quick3way.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding>
-                <element signature="e#143#144#0" expanded="true" />
-                <element signature="e#183#184#0" expanded="true" />
+                <element signature="e#197#198#0" expanded="true" />
+                <element signature="e#248#249#0" expanded="true" />
+                <element signature="e#280#281#0" expanded="true" />
+                <element signature="e#309#310#0" expanded="true" />
+                <element signature="e#334#335#0" expanded="true" />
+                <element signature="e#358#359#0" expanded="true" />
+                <element signature="e#618#619#0" expanded="true" />
+                <element signature="e#667#668#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,6 +72,7 @@
         <option value="$PROJECT_DIR$/../SortPart/src/xyz/yhngo/studyds/main/Quick.java" />
         <option value="$PROJECT_DIR$/../SortPart/src/xyz/yhngo/studyds/main/Quick3way.java" />
         <option value="$PROJECT_DIR$/../SortPart/src/xyz/yhngo/studyds/main/Example.java" />
+        <option value="$PROJECT_DIR$/../SortPart/src/xyz/yhngo/studyds/main/MaxPQ.java" />
       </list>
     </option>
   </component>
@@ -654,12 +649,12 @@
       <workItem from="1469018083853" duration="172000" />
       <workItem from="1469018328756" duration="1644000" />
       <workItem from="1469084255573" duration="10168000" />
-      <workItem from="1469149762798" duration="6972000" />
+      <workItem from="1469149762798" duration="10250000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23311000" />
+    <option name="totallyTimeSpent" value="26589000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="41" y="23" width="1239" height="777" extended-state="0" />
@@ -887,6 +882,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../SortPart/src/xyz/yhngo/studyds/main/Example.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../SortPart/src/xyz/yhngo/studyds/main/Quick3way.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -898,12 +903,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../SortPart/src/xyz/yhngo/studyds/main/Example.java">
+    <entry file="file://$PROJECT_DIR$/../SortPart/src/xyz/yhngo/studyds/main/MaxPQ.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        <state relative-caret-position="120">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#197#198#0" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
           </folding>
         </state>
       </provider>
