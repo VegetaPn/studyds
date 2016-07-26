@@ -1,5 +1,7 @@
 package xyz.yhngo.studyds.main;
 
+import edu.princeton.cs.algs4.In;
+
 /**
  * Created by Vegeta on 7/26/16.
  */
@@ -18,6 +20,16 @@ public class Digraph {
         }
     }
 
+    public Digraph(In in) {
+        this(in.readInt());
+        int E = in.readInt();
+        for (int i = 0; i < E; i++) {
+            int v = in.readInt();
+            int w = in.readInt();
+            addEdge(v, w);
+        }
+    }
+
     public int V() {
         return V;
     }
@@ -32,7 +44,7 @@ public class Digraph {
     }
 
     public Iterable<Integer> adj(int v) {
-        return adj(v);
+        return adj[v];
     }
 
     public Digraph reverse() {
