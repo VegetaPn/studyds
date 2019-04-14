@@ -6,7 +6,7 @@ package me.yanhaonan.sort;
  */
 public class BubbleSort extends BaseSort<Integer> implements Sortable<Integer> {
 
-    public Integer[] sort(Integer[] data) {
+    public void sort(Integer[] data) {
         for (int i = 0; i < data.length; i++) {
             boolean fin = true;
             for (int j = 0; j < data.length - 1 - i; j++) {
@@ -19,6 +19,5 @@ public class BubbleSort extends BaseSort<Integer> implements Sortable<Integer> {
                 break;
             }
         }
-        return data;
     }
 }

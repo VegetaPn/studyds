@@ -6,5 +6,5 @@ package me.yanhaonan.sort;
  * @author Vegeta
  */
 public interface Sortable<T> {
-    T[] sort(T[] data);
+    void sort(T[] data);
 }
