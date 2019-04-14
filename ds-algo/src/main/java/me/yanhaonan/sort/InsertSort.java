@@ -7,7 +7,7 @@ package me.yanhaonan.sort;
  */
 public class InsertSort extends BaseSort<Integer> implements Sortable<Integer> {
     public void sort(Integer[] data) {
-        if (data.length == 1) {
+        if (data.length <= 1) {
             return;
         }
 
