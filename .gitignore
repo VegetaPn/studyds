@@ -1,6 +1,8 @@
 algs4-data/
 BasicPart/.idea/
 
+.idea/
+*.iml
 
 
 *.class
