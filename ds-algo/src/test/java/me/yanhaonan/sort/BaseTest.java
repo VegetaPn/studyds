@@ -14,7 +14,11 @@ public class BaseTest {
     public static Object[][] forSort() {
         return new Object[][] {
                 {new Integer[] {1, 2, 3, 6, 5, 4}, new Integer[] {1, 2, 3, 4, 5, 6}},
-                {new Integer[] {3, 5, 4, 1, 2, 6}, new Integer[] {1, 2, 3, 4, 5, 6}}
+                {new Integer[] {3, 5, 4, 1, 2, 6}, new Integer[] {1, 2, 3, 4, 5, 6}},
+                {new Integer[] {1, 3, 2, 4, 5, 6}, new Integer[] {1, 2, 3, 4, 5, 6}},
+                {new Integer[] {1, 2, 3, 5, 4, 6}, new Integer[] {1, 2, 3, 4, 5, 6}},
+                {new Integer[] {1, 2, 3, 4, 6, 5}, new Integer[] {1, 2, 3, 4, 5, 6}},
+                {new Integer[] {6, 1, 3, 2, 5, 4}, new Integer[] {1, 2, 3, 4, 5, 6}}
         };
     }
 
