@@ -18,9 +18,9 @@ public class BinarySearch implements SearchAble {
       if (data[mid] == val) {
         return mid;
       } else if (data[mid] < val) {
-        lo = mid;
+        lo = mid + 1;
       } else if (data[mid] > val) {
-        hi = mid;
+        hi = mid - 1;
       }
     }
     return -1;
