@@ -22,6 +22,13 @@ public class BaseTest {
         };
     }
 
+    @DataProvider(name = "forSearch")
+    public static Object[][] forSearch() {
+        return new Object[][] {
+            {new int[] {1, 2, 3, 4, 5, 6}, 5, 4}
+        };
+    }
+
     @DataProvider(name = "forSwap")
     public static Object[][] forSwap() {
         return new Object[][] {
