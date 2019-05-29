@@ -16,7 +16,7 @@ public class BinaryTree extends AbstractBinaryTree {
   private BinaryTree left;
   private BinaryTree right;
 
-  public void printPreOrder(BinaryTree tree) {
+  public static void printPreOrder(BinaryTree tree) {
     if (null == tree) {
       return;
     }
@@ -25,6 +25,23 @@ public class BinaryTree extends AbstractBinaryTree {
     printPreOrder(tree.right);
   }
 
+  public static void printInOrder(BinaryTree tree) {
+    if (null == tree) {
+      return;
+    }
+    printInOrder(tree.left);
+    log.info("{}-", tree.val);
+    printInOrder(tree.right);
+  }
+
+  public static void printPostOrder(BinaryTree tree) {
+    if (null == tree) {
+      return;
+    }
+    printPostOrder(tree.left);
+    printPostOrder(tree.right);
+    log.info("{}-", tree.val);
+  }
 
   public BinaryTree getLeft() {
     return left;
