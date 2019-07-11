@@ -15,6 +15,9 @@ public class Graph {
   private Integer v;
   private LinkedList<Integer>[] adj;
 
+  private boolean found = false;
+
+
   public Graph(Integer v) {
     this.v = v;
     this.adj = new LinkedList[v];
@@ -32,29 +35,67 @@ public class Graph {
     if (from == to) {
       return;
     }
+
     boolean[] visited = new boolean[v];
     visited[from] = true;
     Queue<Integer> queue = new LinkedList<>();
     queue.add(from);
     int[] prev = new int[v];
-    for (Integer i = 0; i < v; i++) {
+    for (int i = 0; i < prev.length; i++) {
       prev[i] = -1;
     }
 
-    while (queue.size() != 0) {
-      Integer w = queue.poll();
-      for (int i = 0; i < adj[w].size(); i++) {
-        Integer q = adj[w].get(i);
-        if (!visited[q]) {
-          prev[q] = w;
-          if (q == to) {
-            print(prev, from, to);
-            return;
-          }
-          visited[q] = true;
-          queue.add(q);
+    while (!queue.isEmpty()) {
+      Integer cur = queue.poll();
+      for (Integer n : adj[cur]) {
+        if (visited[n]) {
+          continue;
         }
+
+        prev[n] = cur;
+        if (n == to) {
+          print(prev, from, to);
+          return;
+        }
+        visited[n] = true;
+        queue.add(n);
       }
+    }
+  }
+
+  public void dfsSearch(int from, int to) {
+    if (from == to) {
+      return;
+    }
+
+    boolean[] visited = new boolean[v];
+    int[] prev = new int[v];
+    for (int i = 0; i < prev.length; i++) {
+      prev[i] = -1;
+    }
+
+    dfsSearch(from, to, visited, prev);
+  }
+
+  private void dfsSearch(int from, int to, boolean[] visited, int[] prev) {
+    if (found) {
+      print(prev, from, to);
+      return;
+    }
+
+    if (from == to) {
+      found = true;
+      return;
+    }
+
+    visited[from] = true;
+    for (Integer v : adj[from]) {
+      if (visited[v]) {
+        continue;
+      }
+
+      prev[v] = from;
+      dfsSearch(v, to, visited, prev);
     }
   }
 
