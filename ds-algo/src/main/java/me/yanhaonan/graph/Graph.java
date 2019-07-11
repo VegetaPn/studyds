@@ -75,11 +75,11 @@ public class Graph {
     }
 
     dfsSearch(from, to, visited, prev);
+    print(prev, from, to);
   }
 
   private void dfsSearch(int from, int to, boolean[] visited, int[] prev) {
     if (found) {
-      print(prev, from, to);
       return;
     }
 
