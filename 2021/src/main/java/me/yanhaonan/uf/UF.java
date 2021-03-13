@@ -31,7 +31,7 @@ public class UF {
             parent[rootP] = rootQ;
             size[rootQ] += size[rootP];
         }
-        count--;gp
+        count--;
     }
 
     public boolean isConnect(int p, int q) {
